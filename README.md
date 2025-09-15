@@ -1,4 +1,6 @@
 # MP 0: The Basics
+David's GitHub repository for CS409 MP0
+
 ### Due: Tuesday, Sep 9, 11:59PM
 
 ## Table of Contents

@@ -22,11 +22,20 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
+<<<<<<< HEAD
   build:
+=======
+  # Single deploy job since we're just deploying
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+>>>>>>> 6ab861652104eef6c223800be1ca6846a421a805
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+<<<<<<< HEAD
       - name: Set up Node.js
         uses: actions/setup-node@v4
         with:
@@ -48,6 +57,15 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
+=======
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          # Upload entire repository
+          path: '.'
+>>>>>>> 6ab861652104eef6c223800be1ca6846a421a805
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
