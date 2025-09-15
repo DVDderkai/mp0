@@ -1,18 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MP 0</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MP0 Profile Card</title>
 </head>
-
 <body>
-  <h1>Hello World!</h1>
-  <img src="assets/image.jpg" />
+  <main class="page">
+    <section class="card" role="region" aria-labelledby="name">
+      <img class="avatar" src="./assets/mypic.jpg" alt="Profile photo" />
+
+      <h1 id="name">Dekai Zhao</h1>
+      <h2 class="subtitle">dekaiz2@illinois.edu</h2>
+
+      <p class="bio">
+        I'm Dekai Zhao from MCS. I enjoy gaming and delving into coding challenges. Feel free to reach out to me.
+        One of my favorite games is Valorant, and I'm really excited about the upcoming 2025 Champions Tournament.
+      </p>
+
+      <div class="link">
+        <a href="https://valorantesports.com" target="_blank" rel="noopener">
+          Valorant 2025 Champions Tournament
+        </a>
+      </div>
+    </section>
+  </main>
 
   <script src="bundle.js" type="text/javascript"></script>
 </body>
-
 </html>
